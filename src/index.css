@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms;
+}
+.cont1 {
+  border-radius: 350px 10px 350px 10px;
+}
+.cont2 {
+  border-radius: 100px 350px 10px 350px;
+}
+.icons {
+  /* animation-name: translate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 4s; */
+  opacity: 0;
+  transition: 2s;
+}
+/* @keyframes translate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
+.icons:hover {
+  opacity: 100%;
+}
